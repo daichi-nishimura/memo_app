@@ -1,0 +1,8 @@
+<h1>編集ページ</h1>
+<%= @post.content %>
+<%= form_tag("/memo/#{@post.id}", method: :patch) do %> 
+ <input type="text" name="content"> 
+ <input type="submit" value="編集する">
+<% end %>
+<%= link_to 'トップページ', '/' %>
+
